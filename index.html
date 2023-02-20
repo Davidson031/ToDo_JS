@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo List</title>
+    <link rel="shortcut icon" href="img/todoListFavicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="center">
+            <img src="img/todoList.png">
+        </div>
+
+        <div id="auth" class="center">
+            <form id="authForm">
+                <h3 id="authFormTitle">Acesse o Sistema</h3>
+                <label for="email">E-mail: </label>
+                <input type="email" placeholder="E-mail" id="email">
+
+                <label for="senha">Senha: </label>
+                <input type="password" placeholder="Senha" id="senha">
+
+
+                <button type="submit" id="submitAuthForm">Acessar</button>
+            </form>
+
+            <p id="register">
+                Não possui conta?
+                <button onclick="toggleToRegister()" class="alternative">Cadastrar uma nova conta</button>
+            </p>
+            <p id="access" class="startHidden">
+                Já possui conta?
+                <button onclick="toggleToAccess()" class="alternative">Acesse sua conta</button>
+            </p>
+        </div>
+    </div>
+    <script src="js/utils.js"></script>
+</body>
+
+</html>
